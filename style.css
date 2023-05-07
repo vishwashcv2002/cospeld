@@ -1,0 +1,450 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  background-image: url("./images/bg.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  transition: 1s ease-in;
+}
+
+
+nav {
+  background-color: #22222230;
+  backdrop-filter: blur(10px);
+  margin: 0.2% 1vw;
+  height: 6vh;
+  width: 97vw;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1vw;
+  font-weight: 300;
+  font-size: 1rem;
+  position: fixed;
+  z-index: 99;
+}
+
+
+.b:hover{
+  cursor: pointer;
+}
+
+.logo {
+  pointer-events: none;
+  width: 2.6%;
+  min-width: 45px;
+  margin: 0 68vw 0 0;
+}
+
+.contact {
+  padding-left: 4vw;
+}
+
+.title {
+  color: white;
+  font-size: 875%;
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin: 2vh 4vw 12vh 4vw;
+  padding-top: 16vh;
+}
+
+.cards {
+  display: flex;
+  margin: 8vh 0;
+}
+.card {
+  background-color: #25252530;
+  backdrop-filter: blur(10px);
+  color: white;
+  width: 26vw;
+  align-items: center;
+  justify-content: center;
+  padding: 2vh 3vw;
+  border-radius: 20px;
+  margin: 2vh 3.4vw;
+}
+
+.head {
+  font-size: 3.2vw;
+  width: 18vw;
+  font-weight: 200;
+  margin: 5.2vh 0;
+  letter-spacing: -0.2rem;
+}
+
+.para {
+  font-weight: 200;
+  width: 20vw;
+  font-size: 120%;
+  margin: 5.2vh 0;
+}
+
+.our-services {
+  color: white;
+  padding-top: 12vh;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-s {
+  background-color: #25252530;
+  backdrop-filter: blur(10px);
+  color: white;
+  width: 26vw;
+  align-items: center;
+  justify-content: center;
+  padding: 4vh 0;
+  border-radius: 20px;
+  margin: 2vh 3.4vw;
+}
+
+.product-s {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 200;
+  font-size: 160%;
+}
+
+.t-card {
+  background-color: #22222230;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 4vh 4vw;
+  margin: 12vh 3vw;
+}
+
+.t-title {
+  font-size: 300%;
+  font-weight: 300;
+  color: white;
+  padding: 2vh 0;
+}
+
+.t-para {
+  font-size: 140%;
+  color: white;
+  font-weight: 200;
+  padding: 2vh 0;
+}
+
+.project {
+  background-color: #857aff;
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+
+.one-of {
+  padding: 12vh 0;
+}
+
+.p-flex {
+  display: flex;
+}
+
+.p-content {
+  padding-left: 10vw;
+}
+
+.p-title {
+  font-size: 64px;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.p-subtitle {
+  font-size: 40px;
+  padding-bottom: 4vh;
+}
+
+.p-para {
+  font-size: 32px;
+  font-weight: 300;
+  width: 40vw;
+}
+
+.p-button {
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  margin-top: 4vh;
+  width: 180px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120%;
+}
+
+.p-button:hover{
+  cursor: pointer;
+}
+
+
+.phone {
+  height: 32vw;
+  padding-left: 10vw;
+  padding-bottom: 12vh;
+}
+
+.footer {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6vh 6vw;
+  background-color: #22222230;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: 20vw;
+  font-weight: 200;
+}
+
+.talk {
+  margin: 2vh 0;
+}
+
+.f-button {
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  width: 180px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120%;
+}
+
+
+.f-button:hover{
+  cursor: pointer;
+}
+
+
+.co {
+  background-color: #22222230;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6vh 6vw;
+  color: white;
+  font-weight: 200;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #22222230;
+  color: white;
+  font-weight: 200;
+  font-size: 180%;
+  padding: 4vh 0;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 66s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .logo {
+    margin-right: 48vw;
+  }
+
+  nav {
+    width: 96vw;
+  }
+
+  .title {
+    font-size: 7.4vw;
+  }
+
+  .card-s {
+    font-size: 120%;
+  }
+
+  .p-title {
+    margin: 0vh;
+  }
+  .p-button {
+    margin-bottom: 2vh;
+  }
+  .p-para {
+    font-size: 140%;
+  }
+
+  .phone {
+    height: 60vh;
+  }
+
+  .links {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-image: url("./images/bg-m.png");
+  }
+
+  nav {
+    max-width: 93vw;
+    min-width: 280px;
+    min-height: 50px;
+    padding: 2vh 4vw;
+    margin: 0 2vw;
+    font-size: 80%;
+  }
+
+  .logo {
+    margin: 0 0vw 0 0;
+  }
+  .title {
+    font-size:  230%;
+    max-width: 80vw;
+    margin: 2vh 4vw 26vh 4vw;
+  }
+
+  .cards {
+    display: block;
+  }
+  .card {
+    width: 86vw;
+    margin: 2vh 6vw;
+  }
+
+  .head {
+    width: 70vw;
+    font-size: 35px;
+    padding: 0vh 10vw;
+  }
+
+  .para {
+    width: 80vw;
+    font-size: 100%;
+    padding: 0vh 10vw;
+  }
+
+  .our-services {
+    font-size: 200%;
+  }
+
+  .card-s {
+    width: 86vw;
+  }
+
+  .p-flex {
+    display: block;
+  }
+
+  .p-title {
+    font-size: 200%;
+  }
+  .p-subtitle {
+    font-size: 5vw;
+  }
+  .p-para {
+    font-size: 100%;
+    width: 60vw;
+  }
+  .phone {
+    display: none;
+  }
+
+  .p-button {
+    font-size: 100%;
+  }
+
+  .arrow-icon {
+    width: 24px;
+  }
+
+  .t-card {
+    width: 86vw;
+    margin: 6vh 6vw;
+  }
+
+  .t-title {
+    font-size: 200%;
+    padding: 4vh 10vw;
+  }
+  .t-para {
+    font-size: 100%;
+    width: 80vw;
+    padding: 1vh 10vw;
+  }
+
+  .f-button {
+    font-size: 100%;
+  }
+  .talk {
+    margin: 2vh 10vw;
+  }
+  .footer {
+    display: block;
+  }
+  .links {
+    display: block;
+    width: 86vw;
+    padding: 2vh 12vw;
+  }
+  .link {
+    padding: 2vh 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 10vw;
+   
+  }
+  .co {
+    font-size: 66%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    max-width: 6    0vw;
+  }
+
+  body {
+    background-image: url("./images/bg-m2.png");
+  }
+}
